@@ -1,0 +1,8 @@
+hardstatus alwayslastline  
+hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %c:%s "  
+startup_message off  
+vbell off  
+bind ' ' title 
+bindkey -k k; title
+bindkey -k F1 prev
+bindkey -k F2 next

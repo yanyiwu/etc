@@ -1,0 +1,29 @@
+#ipv6
+deb http://mirror.switch.ch/ftp/ubuntu/ lucid main multiverse restricted universe
+deb http://mirror.switch.ch/ftp/ubuntu/ lucid-backports main multiverse restricted universe
+deb http://mirror.switch.ch/ftp/ubuntu/ lucid-proposed main multiverse restricted universe
+deb http://mirror.switch.ch/ftp/ubuntu/ lucid-security main multiverse restricted universe
+deb http://mirror.switch.ch/ftp/ubuntu/ lucid-updates main multiverse restricted universe
+deb http://ftp.heanet.ie/mirrors/ubuntu/ lucid main multiverse restricted universe
+deb http://ftp.heanet.ie/mirrors/ubuntu/ lucid-backports main multiverse restricted universe
+deb http://ftp.heanet.ie/mirrors/ubuntu/ lucid-proposed main multiverse restricted universe
+deb http://ftp.heanet.ie/mirrors/ubuntu/ lucid-security main multiverse restricted universe
+deb http://ftp.heanet.ie/mirrors/ubuntu/ lucid-updates main multiverse restricted universe
+deb http://ftp.kddlabs.co.jp/020/Linux/packages/ubuntu/archive/ lucid main multiverse restricted universe
+deb http://ftp.kddlabs.co.jp/020/Linux/packages/ubuntu/archive/ lucid-backports main multiverse restricted universe
+deb http://ftp.kddlabs.co.jp/020/Linux/packages/ubuntu/archive/ lucid-proposed main multiverse restricted universe
+deb http://ftp.kddlabs.co.jp/020/Linux/packages/ubuntu/archive/ lucid-security main multiverse restricted universe
+deb http://ftp.kddlabs.co.jp/020/Linux/packages/ubuntu/archive/ lucid-updates main multiverse restricted universe
+
+#网易（速度很快）
+#代码:
+deb http://mirrors.163.com/ubuntu/ lucid main universe restricted multiverse
+deb-src http://mirrors.163.com/ubuntu/ lucid main universe restricted multiverse
+deb http://mirrors.163.com/ubuntu/ lucid-security universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-security universe main multiverse restricted
+deb http://mirrors.163.com/ubuntu/ lucid-updates universe main multiverse restricted
+deb http://mirrors.163.com/ubuntu/ lucid-proposed universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-proposed universe main multiverse restricted
+deb http://mirrors.163.com/ubuntu/ lucid-backports universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-backports universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-updates universe main multiverse restricted

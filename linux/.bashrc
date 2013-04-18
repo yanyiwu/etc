@@ -91,6 +91,7 @@ alias ..2='cd ../..'
 alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 
+alias rrm='/bin/rm -rf'
 alias rm='mv --target-directory ~/.trash'
 export CLASSPATH=$CLASSPATH:.:build/lucene-core-3.0.3-dev.jar:build/lucene-demos-3.0.3-dev.jar
 alias vi='vim -O'

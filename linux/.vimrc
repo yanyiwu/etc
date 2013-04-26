@@ -11,6 +11,8 @@ set smarttab
 
 command Q : q
 command W : w
+command Wq : wq
+
 
 " show the percentage of the content 
 set ru

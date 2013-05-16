@@ -1,0 +1,35 @@
+CC = g++
+CCOPT = -Wall -c
+LINK = g++
+LINKOPT =
+PACKA = ar
+PARCAOPT = rc
+DOLINK = $(LINK) $(LINKOPT) -o $@ $^
+
+LIBDIR = 
+LIBDB =  
+LIBDBOPT = 
+CMDIR = 
+CMLIB = 
+
+
+# remove the objs after compilation
+.INTERMEDIATE: 
+
+# This is a suffix rule 
+#.c.o: 
+%.o: %.cpp
+	$(CC) $(CCOPT) $<
+
+# Main Targets
+all: 
+
+
+#main: main.o Tagger.o $(LABELLIB) $(LIBDB) $(CMLIB)
+#	$(DOLINK) $(LIBDBOPT)
+
+#$(LABELLIB): $(LIBDIR)
+#	cd $(LIBDIR) && $(MAKE)
+
+clean:
+	rm -f 

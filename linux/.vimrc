@@ -8,6 +8,7 @@ set mouse=v
 set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
 set number
 set smarttab
+set expandtab
 
 command Q : q
 command W : w

@@ -1,5 +1,8 @@
 #!/bin/sh
 INSTALL="apt-get install -y"
+UPDATE="apt-get update"
+
+$UPDATE
 
 $INSTALL vim;
 $INSTALL git git-core;
@@ -26,4 +29,4 @@ $INSTALL ice34-services ice34-slice ice34-translators;
 $INSTALL openjdk-7-jdk;
 
 #mysql:need user to set mysql root password
-$INSTALL mysql-server-5.5 mysql-server-core-5.5 mysql-client-core-5.5
+#$INSTALL mysql-server mysql-server-core mysql-client-core

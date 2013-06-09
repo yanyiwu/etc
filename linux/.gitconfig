@@ -1,0 +1,8 @@
+[user]
+	name = wyy
+	email = wuyanyi09@gmail.com
+[alias]
+	st = status
+	ci = commit -V
+[color]
+	ui = true

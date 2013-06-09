@@ -5,7 +5,7 @@ UPDATE="apt-get update"
 $UPDATE
 
 $INSTALL vim;
-$INSTALL git git-core;
+$INSTALL git git-core git-completion;
 $INSTALL screen;
 $INSTALL curl;
 

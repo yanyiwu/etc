@@ -5,6 +5,11 @@ LINKOPT =
 PACKA = ar
 PARCAOPT = rc
 DOLINK = $(LINK) $(LINKOPT) -o $@ $^
+SOURCES := $(wildcard *.cpp)
+OBJS := $(patsubst %.cpp,%.o,$(SOURCES))
+
+CMDIR = ./cppcommon/
+CMLIB = $(CMDIR)cmlib.a
 
 LIBDIR = 
 LIBDB =  
@@ -22,7 +27,7 @@ CMLIB =
 	$(CC) $(CCOPT) $<
 
 # Main Targets
-all: 
+all: main
 
 
 #main: main.o Tagger.o $(LABELLIB) $(LIBDB) $(CMLIB)
@@ -33,3 +38,12 @@ all:
 
 clean:
 	rm -f 
+
+
+
+sinclude $(SOURCES:.cpp=.d)
+%.d:%.cpp
+	@set -e; rm -f $@; \
+	$(CC) -MM $< > $@.$$$$; \
+	sed 's,\($*\).o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
+	rm -f $@.$$$$

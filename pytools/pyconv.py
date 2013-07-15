@@ -11,7 +11,7 @@ enc_from = sys.argv[1]
 enc_to = sys.argv[2]
 infile = open(sys.argv[3],"r")
 outfile = open(sys.argv[4],"w")
-for i, line in enumerate(infile, "r"):
+for i, line in enumerate(infile):
     try:
         outfile.write(line.decode(enc_from).encode(enc_to))
     except Exception as err:

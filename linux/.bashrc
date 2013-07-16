@@ -69,16 +69,12 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 
     alias rm='rm -i'
-	alias g++='g++ -g'
-	alias matlab='sudo matlab &'
 fi
 
 # some more ls aliases
@@ -86,18 +82,15 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias ..='cd ..'
-alias ..2='cd ../..'
-alias ..3='cd ../../..'
-alias ..4='cd ../../../..'
-
 alias rrm='/bin/rm -rf'
 alias rm='mv --target-directory ~/.trash'
 export CLASSPATH=$CLASSPATH:.:build/lucene-core-3.0.3-dev.jar:build/lucene-demos-3.0.3-dev.jar
 alias vi='vim -O'
 alias dropbox='~/etc/linux/dropbox_uploader.sh'
+alias pyconv='~/etc/pytools/pyconv.sh'
 
 alias ssh20='ssh wyy@202.85.213.20'
+
 
  #Alias definitions.
 # You may want to put all your additions into a separate file like

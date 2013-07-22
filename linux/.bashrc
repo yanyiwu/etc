@@ -89,7 +89,6 @@ alias vi='vim -O'
 alias dropbox='~/etc/linux/dropbox_uploader.sh'
 alias pyconv='~/etc/pytools/pyconv.py'
 
-alias ssh20='ssh wyy@202.85.213.20'
 
 
  #Alias definitions.

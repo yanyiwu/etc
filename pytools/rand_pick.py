@@ -9,10 +9,14 @@ if len(sys.argv) < 5:
     exit(1)
 
 filename = sys.argv[1]
-begin = sys.argv[2]
-end = sys.argv[3]
-picksum = sys.argv[4]
-print sorted(random.sample(range(begin,end,picksum)))
+begin = int(sys.argv[2])
+end = int(sys.argv[3])
+picksum = int(sys.argv[4])
+randlist = sorted(random.sample(range(begin,end), picksum))
 for i , line in enumerate(open(filename, "r")):
-    if
-
+    if randlist:
+        if i == randlist[0]:
+            print line.rstrip("\n")
+            randlist.pop(0)
+    else:
+        break

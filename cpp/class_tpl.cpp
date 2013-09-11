@@ -2,23 +2,23 @@
 
 namespace NS
 {
-	Classtpl::Classtpl()
-	{
-	}
-	
-	Classtpl::~Classtpl()
-	{
-	}
+    Classtpl::Classtpl()
+    {
+    }
+    
+    Classtpl::~Classtpl()
+    {
+    }
 
-	bool Classtpl::init()
-	{
-		return true;
-	}
-	
-	bool Classtpl::dispose()
-	{
-		return true;
-	}
+    bool Classtpl::init()
+    {
+        return true;
+    }
+    
+    bool Classtpl::dispose()
+    {
+        return true;
+    }
 }
 
 
@@ -27,7 +27,7 @@ using namespace NS;
 
 int main()
 {
-	return 0;
+    return 0;
 }
 
 #endif

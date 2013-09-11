@@ -4,10 +4,10 @@ startup_message off
 vbell off  
 bind ' ' title 
 bindkey -k k; title
-#bindkey -k F1 prev
-#bindkey -k F2 next
-defencoding GBK
-encoding GBK UTF-8
+bindkey -k F1 prev
+bindkey -k F2 next
+#defencoding GBK
+#encoding GBK UTF-8
 
 bindkey "^[j" prev
 bindkey "^[k" next

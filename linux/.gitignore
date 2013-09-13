@@ -6,4 +6,6 @@ tags
 *.d
 *.ut
 log
+*.log
 *.pyc
+*.a

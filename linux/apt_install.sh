@@ -30,3 +30,4 @@ $INSTALL openjdk-7-jdk;
 
 #mysql:need user to set mysql root password
 #$INSTALL mysql-server mysql-server-core mysql-client-core
+

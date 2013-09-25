@@ -8,4 +8,5 @@ tags
 log
 *.log
 *.pyc
+*.pyo
 *.a

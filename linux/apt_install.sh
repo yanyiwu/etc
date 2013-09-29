@@ -6,7 +6,7 @@ $UPDATE
 
 $INSTALL vim;
 $INSTALL git git-core git-completion;
-$INSTALL screen;
+$INSTALL ssh screen;
 $INSTALL curl;
 
 #chrome
@@ -16,9 +16,7 @@ $INSTALL chromium-browser;
 $INSTALL g++;
 
 #python
-$INSTALL python-setuptools;
-$INSTALL pylint;
-$INSTALL python-mysqldb;
+$INSTALL python-setuptools python-mysqldb pylint
 
 
 #ice communication

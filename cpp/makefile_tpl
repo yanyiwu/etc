@@ -1,50 +1,47 @@
-CC = g++
-CCOPT = -Wall -c
-LINK = g++
-LINKOPT =
-PACKA = ar
-PARCAOPT = rc
-DOLINK = $(LINK) $(LINKOPT) -o $@ $^
+CXX    := g++
+LD     := g++
+AR     := ar rc
+
+DEBUG_CXXFLAGS     := -g -Wall -DDEBUG 
+RELEASE_CXXFLAGS   := -Wall -O3
+
+ifeq (YES, ${RELEASE})
+   CXXFLAGS     := ${RELEASE_CXXFLAGS}
+   LDFLAGS      := ${RELEASE_LDFLAGS}
+else
+   CXXFLAGS       := ${DEBUG_CXXFLAGS}
+   LDFLAGS      := ${DEBUG_LDFLAGS}
+endif
+
+DOLINK := $(LD) $(LDFLAGS) -o $@ $^
+DOPACK := $(AR)  
 SOURCES := $(wildcard *.cpp)
 OBJS := $(patsubst %.cpp,%.o,$(SOURCES))
 
-CMDIR = ./cppcommon/
-CMLIB = $(CMDIR)cmlib.a
+TMPDIR := ./cppjiebatmp
 
-LIBDIR = 
-LIBDB =  
-LIBDBOPT = 
-CMDIR = 
-CMLIB = 
+LIBA := libcppjieba.a
 
-
-# remove the objs after compilation
 .INTERMEDIATE: 
-.PHONY: clean
+.PHONY: clean 
+
+all: $(LIBA)
 
 # This is a suffix rule 
 #.c.o: 
 %.o: %.cpp
-	$(CC) $(CCOPT) $<
+	$(CXX) -c $(CXXFLAGS) $<
 
-# Main Targets
-all: main
-
-
-#main: main.o Tagger.o $(LABELLIB) $(LIBDB) $(CMLIB)
-#	$(DOLINK) $(LIBDBOPT)
-
-#$(LABELLIB): $(LIBDIR)
-#	cd $(LIBDIR) && $(MAKE)
+${LIBA}: $(OBJS)
+	$(DOPACK) $@ $(OBJS) 
 
 clean:
-	rm -f 
-
-
+	rm -f *.o *.d *.d.* *.ut $(LIBA) 
 
 sinclude $(SOURCES:.cpp=.d)
 %.d:%.cpp
 	@set -e; rm -f $@; \
-	$(CC) -MM $< > $@.$$$$; \
+	$(CXX) -MM $< > $@.$$$$; \
 	sed 's,\($*\).o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
 	rm -f $@.$$$$
+

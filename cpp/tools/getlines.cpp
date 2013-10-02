@@ -11,6 +11,7 @@ int main(int argc, char** argv)
     }
     ifstream ifs(argv[1]);
     string line;
+    int lineno =0;
     while(getline(ifs, line, '\0'))
     {
         for(int i = 0; i< line.size(); i++)
@@ -18,7 +19,7 @@ int main(int argc, char** argv)
             if(line[i]=='\n')
               line[i] = '/';
         }
-        cout<<__FILE__<<line<<endl;
+        cout<<(++lineno)<<line<<endl;
     }
     
     return 0;

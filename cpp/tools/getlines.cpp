@@ -19,7 +19,7 @@ int main(int argc, char** argv)
             if(line[i]=='\n')
               line[i] = '/';
         }
-        cout<<(++lineno)<<line<<endl;
+        cout<<line<<endl;
     }
     
     return 0;

@@ -44,5 +44,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+source $HOME/.zsh-syntax-highlighting.zsh
+source $HOME/.zsh-history-substring-search.zsh
 
 # Customize to your needs...

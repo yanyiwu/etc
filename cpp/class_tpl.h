@@ -6,8 +6,8 @@ namespace NS
     class Classtpl
     {
         public:
-            Classtpl();
-            ~Classtpl();
+            Classtpl(){};
+            ~Classtpl(){};
         public:
             bool init();
             bool dispose();

@@ -84,6 +84,8 @@ alias l='ls -CF'
 
 alias rrm='/bin/rm -rf'
 alias rm='mv --target-directory ~/.trash'
+alias mv='mv -i'
+alias cp='cp -i'
 export CLASSPATH=$CLASSPATH:.:build/lucene-core-3.0.3-dev.jar:build/lucene-demos-3.0.3-dev.jar
 alias vi='vim -O'
 alias dropbox='~/etc/linux/dropbox_uploader.sh'

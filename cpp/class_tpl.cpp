@@ -2,14 +2,6 @@
 
 namespace NS
 {
-    Classtpl::Classtpl()
-    {
-    }
-    
-    Classtpl::~Classtpl()
-    {
-    }
-
     bool Classtpl::init()
     {
         return true;

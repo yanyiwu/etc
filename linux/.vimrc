@@ -31,12 +31,10 @@ set t_Sb=^[[4%dm
 set t_Sf=^[[3%dm
 endif
 
-"侦测文件类型
 filetype on
-"载入文件类型插件
 filetype plugin on
-" 为特定文件类型载入相关缩进文件
 filetype indent on
+" set encoding=gbk
 set fencs=utf-8,gbk
 
 " highlight search

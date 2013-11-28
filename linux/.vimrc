@@ -15,6 +15,7 @@ set backspace=indent,eol,start
 command Q : q
 command W : w
 command Wq : wq
+command WQ : wq
 
 
 " show the percentage of the content 

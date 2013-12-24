@@ -4,5 +4,6 @@
 [alias]
 	st = status
 	ci = commit -V
+    co = checkout
 [color]
 	ui = true

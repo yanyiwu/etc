@@ -80,7 +80,11 @@ Bundle 'git://git.wincent.com/command-t.git'
 " better color
 Bundle 'tomasr/molokai'
 
-" ...
+Bundle 'pangloss/vim-javascript'
+
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
 
 filetype plugin indent on     " required!
 "

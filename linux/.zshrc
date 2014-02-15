@@ -46,3 +46,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export GOROOT=$HOME/local/go
+export GOBIN=$GOROOT/bin
+export PATH=$GOBIN:$PATH
+
+unsetopt correct_all

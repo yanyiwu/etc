@@ -56,35 +56,35 @@ au BufReadPost *
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-" My bundles here:
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 "
-" original repos on GitHub
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-" non-GitHub repos
-Bundle 'git://git.wincent.com/command-t.git'
-" Git repos on your local machine (i.e. when working on your own plugin)
-"Bundle 'file:///Users/gmarik/path/to/plugin'
-" better color
-Bundle 'tomasr/molokai'
-
-Bundle 'pangloss/vim-javascript'
-
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
+"" let Vundle manage Vundle
+"" required! 
+"Bundle 'gmarik/vundle'
+"
+"" My bundles here:
+""
+"" original repos on GitHub
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
+"" vim-scripts repos
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+"" non-GitHub repos
+"Bundle 'git://git.wincent.com/command-t.git'
+"" Git repos on your local machine (i.e. when working on your own plugin)
+""Bundle 'file:///Users/gmarik/path/to/plugin'
+"" better color
+"Bundle 'tomasr/molokai'
+"
+"Bundle 'pangloss/vim-javascript'
+"
+"let g:html_indent_inctags = "html,body,head,tbody"
+"let g:html_indent_script1 = "inc"
+"let g:html_indent_style1 = "inc"
 
 filetype plugin indent on     " required!
 "

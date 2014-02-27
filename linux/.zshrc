@@ -49,5 +49,6 @@ source $ZSH/oh-my-zsh.sh
 export GOROOT=$HOME/local/go
 export GOBIN=$GOROOT/bin
 export PATH=$GOBIN:$PATH
+export LANG=zh_CN.UTF-8
 
 unsetopt correct_all

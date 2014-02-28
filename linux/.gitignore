@@ -13,4 +13,5 @@ segdict*
 tmp
 t.*
 *.pid
+tags
 node_modules

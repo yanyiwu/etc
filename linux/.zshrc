@@ -53,4 +53,3 @@ export LANG=zh_CN.UTF-8
 
 unsetopt correct_all
 
-source ~/code/nvm/nvm.sh

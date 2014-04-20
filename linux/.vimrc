@@ -56,13 +56,15 @@ au BufReadPost *
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-"set rtp+=~/.vim/bundle/vundle/
-"call vundle#rc()
-"
-"" let Vundle manage Vundle
-"" required! 
-"Bundle 'gmarik/vundle'
-"
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'kien/ctrlp.vim'
+
 "" My bundles here:
 ""
 "" original repos on GitHub
@@ -81,10 +83,11 @@ filetype off                  " required!
 "Bundle 'tomasr/molokai'
 "
 "Bundle 'pangloss/vim-javascript'
-"
-"let g:html_indent_inctags = "html,body,head,tbody"
-"let g:html_indent_script1 = "inc"
-"let g:html_indent_style1 = "inc"
+
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
 
 filetype plugin indent on     " required!
 "

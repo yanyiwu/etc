@@ -10,6 +10,7 @@ $INSTALL ssh screen;
 $INSTALL curl;
 $INSTALL cmake;
 $INSTALL clang;
+$INSTALL npm;
 
 #chrome
 #$INSTALL chromium-browser;

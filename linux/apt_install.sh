@@ -9,6 +9,7 @@ $INSTALL git git-core git-completion;
 $INSTALL ssh screen;
 $INSTALL curl;
 $INSTALL cmake;
+$INSTALL clang;
 
 #chrome
 #$INSTALL chromium-browser;

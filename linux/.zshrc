@@ -55,3 +55,6 @@ unsetopt correct_all
 
 source ~/git/nvm/nvm.sh
 export NVM_NODEJS_ORG_MIRROR=http://dist.u.qiniudn.com
+alias npm='npm --registry=http://r.cnpmjs.org --disturl=http://dist.u.qiniudn.com'
+
+export LC_ALL=C

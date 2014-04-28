@@ -35,7 +35,8 @@ endif
 filetype off
 filetype plugin on
 filetype indent on
-set fencs=utf-8,gbk
+set enc=utf8
+set fencs=utf8,gbk
 
 " highlight search
 set hlsearch

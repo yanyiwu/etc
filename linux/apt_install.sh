@@ -6,11 +6,12 @@ $UPDATE
 
 $INSTALL vim;
 $INSTALL git git-core git-completion;
-$INSTALL ssh screen;
+$INSTALL ssh screen tmux;
 $INSTALL curl;
 $INSTALL cmake;
 $INSTALL clang;
 $INSTALL npm;
+$INSTALL zsh;
 
 #chrome
 #$INSTALL chromium-browser;

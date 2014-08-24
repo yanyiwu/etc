@@ -79,6 +79,6 @@ export PATH="/Users/yanyiwu/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/loca
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="vim -O"
-export GOPATH=~/mygo
+export GOPATH=~/golang
 export PATH=$GOPATH/bin/:$PATH
 DISABLE_AUTO_TITLE=true

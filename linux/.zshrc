@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/yanyiwu/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$HOME/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -82,3 +82,5 @@ alias vi="vim -O"
 export GOPATH=~/golang
 export PATH=$GOPATH/bin/:$PATH
 DISABLE_AUTO_TITLE=true
+alias rm='mv --target-directory ~/.trash'
+alias rrm='/bin/rm -rf'

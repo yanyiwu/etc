@@ -11,6 +11,7 @@ set number
 set smarttab
 set expandtab
 set backspace=indent,eol,start
+set paste
 
 command Q : q
 command W : w

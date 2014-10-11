@@ -33,3 +33,5 @@ $INSTALL python-setuptools python-mysqldb pylint
 #mysql:need user to set mysql root password
 #$INSTALL mysql-server mysql-server-core mysql-client-core
 
+$INSTALL ruby1.9.1-dev
+gem install jekyll

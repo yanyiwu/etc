@@ -82,7 +82,10 @@ alias vi="vim -O"
 export GOPATH=~/golang
 export PATH=$GOPATH/bin/:$PATH
 DISABLE_AUTO_TITLE=true
-alias rm='mv --target-directory ~/.trash'
+function rmfunc() {
+  mv $@ ~/.trash/
+}
+alias rm=rmfunc
 alias rrm='/bin/rm -rf'
 
 function extract () {

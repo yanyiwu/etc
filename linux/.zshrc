@@ -78,6 +78,7 @@ export PATH="$HOME/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export EDITOR='vim'
 alias vi="vim -O"
 export GOPATH=~/golang
 export PATH=$GOPATH/bin/:$PATH

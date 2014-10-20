@@ -8,6 +8,7 @@ $INSTALL vim;
 $INSTALL git git-core git-completion;
 $INSTALL ssh screen tmux;
 $INSTALL curl;
+$INSTALL make;
 $INSTALL cmake;
 $INSTALL clang;
 $INSTALL npm;
@@ -33,3 +34,5 @@ $INSTALL python-setuptools python-mysqldb pylint
 #mysql:need user to set mysql root password
 #$INSTALL mysql-server mysql-server-core mysql-client-core
 
+$INSTALL ruby1.9.1-dev
+gem install jekyll

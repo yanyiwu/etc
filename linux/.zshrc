@@ -118,3 +118,6 @@ alias tm='ps -ef | grep'
 ft() {
     find . -name "$2" -exec grep -il "$1" {} \;
 }
+
+export EDITOR='vim'
+

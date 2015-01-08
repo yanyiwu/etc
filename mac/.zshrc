@@ -79,7 +79,7 @@ export PATH="$HOME/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="vim -O"
-export GOPATH=~/golang
+export GOPATH=~/golang/
 export PATH=$GOPATH/bin/:$PATH
 DISABLE_AUTO_TITLE=true
 
@@ -111,6 +111,15 @@ function rmfunc() {
 }
 alias rm=rmfunc
 
+function gotaghere() {
+  rm -f tags
+  gotags -R=true -f=tags *
+}
+
+function astylegoogle() {
+  astyle -C --style=google --indent=spaces=2 $@
+}
+
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
 
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -120,6 +129,11 @@ ft() {
     find . -name "$2" -exec grep -il "$1" {} \;
 }
 
+
+
 export DOCKER_CERT_PATH=/Users/yanyiwu/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
+
+export JAVA_HOME=`/usr/libexec/java_home`
+export PATH=${JAVA_HOME}/bin:$PATH

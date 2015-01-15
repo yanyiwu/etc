@@ -11,7 +11,6 @@ set number
 set smarttab
 set expandtab
 set backspace=indent,eol,start
-set paste
 
 command Q : q
 command W : w
@@ -103,8 +102,8 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
-nmap j <left>
-nmap l <right>
-nmap i <up>
-nmap k <down>
-nmap h <insert>
+"nmap j <left>
+"nmap l <right>
+"nmap i <up>
+"nmap k <down>
+"nmap h <insert>

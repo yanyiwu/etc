@@ -81,6 +81,7 @@ export PATH="$HOME/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export EDITOR='vim'
 alias vi="vim -O"
 export GOPATH=~/golang
+export GOROOT=~/local/go
 export PATH=$GOPATH/bin/:$PATH
 DISABLE_AUTO_TITLE=true
 function rmfunc() {

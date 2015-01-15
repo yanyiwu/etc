@@ -66,6 +66,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'kien/ctrlp.vim'
+Bundle 'fatih/vim-go'
 
 "" My bundles here:
 ""

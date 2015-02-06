@@ -89,6 +89,14 @@ function rmfunc() {
 }
 alias rm=rmfunc
 alias rrm='/bin/rm -rf'
+function gotaghere() {
+  rm -f tags
+  gotags -R=true -f=tags *
+}
+
+function astylegoogle() {
+  astyle -C --style=google --indent=spaces=2 $@
+}
 
 function extract () {
     if [ -f $1 ] ; then

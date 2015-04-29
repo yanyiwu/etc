@@ -11,7 +11,7 @@ set number
 set smarttab
 set expandtab
 set backspace=indent,eol,start
-set path+="/usr/include"
+set path+=/usr/include,/usr/include/c++/4.4.7
 
 command Q : q
 command W : w

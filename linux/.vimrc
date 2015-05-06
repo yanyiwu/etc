@@ -60,17 +60,25 @@ au BufReadPost *
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#rc()
+call vundle#begin()
+Plugin 'honza/vim-snippets'
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-
 Bundle 'kien/ctrlp.vim'
 Bundle 'fatih/vim-go'
 Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'pangloss/vim-javascript'
+Bundle 'ervandew/supertab'
+Bundle 'Raimondi/delimitMate'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/a.vim'
+
+call vundle#end()
 
 "" My bundles here:
 ""
@@ -89,7 +97,6 @@ Bundle 'scrooloose/nerdcommenter'
 "" better color
 "Bundle 'tomasr/molokai'
 "
-"Bundle 'pangloss/vim-javascript'
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"

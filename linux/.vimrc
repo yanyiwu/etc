@@ -12,6 +12,8 @@ set smarttab
 set expandtab
 set backspace=indent,eol,start
 set path+=/usr/include,/usr/include/c++/4.4.7
+au FileType cpp set tabstop=2
+au FileType cpp set shiftwidth=2
 
 command Q : q
 command W : w
@@ -67,6 +69,8 @@ Bundle 'gmarik/vundle'
 
 Bundle 'kien/ctrlp.vim'
 Bundle 'fatih/vim-go'
+Bundle 'octol/vim-cpp-enhanced-highlight'
+Bundle 'scrooloose/nerdcommenter'
 
 "" My bundles here:
 ""
@@ -108,3 +112,31 @@ filetype plugin indent on     " required!
 "nmap i <up>
 "nmap k <down>
 "nmap h <insert>
+
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }

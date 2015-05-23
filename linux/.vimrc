@@ -12,6 +12,7 @@ set smarttab
 set expandtab
 set backspace=indent,eol,start
 set path+=/usr/include,/usr/include/c++/4.4.7
+set mouse=a
 au FileType cpp set tabstop=2
 au FileType cpp set shiftwidth=2
 

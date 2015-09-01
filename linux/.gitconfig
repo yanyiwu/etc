@@ -8,3 +8,7 @@
     pull = pull --ff-only
 [color]
 	ui = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = No

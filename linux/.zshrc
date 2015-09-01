@@ -130,3 +130,5 @@ ft() {
 
 export EDITOR='vim'
 
+alias cleantrash="rrm ~/.trash/*"
+. ~/.nvm/nvm.sh

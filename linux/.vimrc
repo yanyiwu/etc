@@ -11,9 +11,11 @@ set number
 set smarttab
 set expandtab
 set backspace=indent,eol,start
-set path+=/usr/include,/usr/include/c++/4.4.7
+set path+=/usr/include
 au FileType cpp set tabstop=2
 au FileType cpp set shiftwidth=2
+au FileType c set tabstop=2
+au FileType c set shiftwidth=2
 
 command Q : q
 command W : w
@@ -78,6 +80,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/a.vim'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
@@ -102,6 +105,11 @@ call vundle#end()
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+" GoInstallBineries, GoImports will be called when :w
+let g:go_fmt_command = "goimports"
+
+"nmap gd:GoDef<CR>
 
 
 filetype plugin indent on     " required!
@@ -148,4 +156,13 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+" vimdiff colors
+"syntax enable
+"set background=dark
+"colorscheme solarized
+
+if &diff
+    syntax off
+endif
 

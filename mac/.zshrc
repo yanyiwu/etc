@@ -137,3 +137,9 @@ export DOCKER_HOST=tcp://192.168.59.103:2376
 
 export JAVA_HOME=`/usr/libexec/java_home`
 export PATH=${JAVA_HOME}/bin:$PATH
+#export NVM_IOJS_ORG_MIRROR="https://npm.taobao.org/mirrors/iojs/"
+#export NVM_DIR=$(brew --prefix)/var/nvm
+#source $(brew --prefix nvm)/nvm.sh
+
+
+function ports() { lsof -Pni4 | grep LISTEN }

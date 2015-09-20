@@ -12,7 +12,6 @@ set smarttab
 set expandtab
 set backspace=indent,eol,start
 set path+=/usr/include,/usr/include/c++/4.4.7
-set mouse=a
 au FileType cpp set tabstop=2
 au FileType cpp set shiftwidth=2
 
@@ -78,6 +77,7 @@ Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/a.vim'
+Bundle 'derekwyatt/vim-scala'
 
 call vundle#end()
 
@@ -148,3 +148,4 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+

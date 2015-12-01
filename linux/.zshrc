@@ -131,4 +131,4 @@ ft() {
 export EDITOR='vim'
 
 alias cleantrash="rrm ~/.trash/*"
-. ~/.nvm/nvm.sh
+export LD_LIBRARY_PATH=/usr/local/lib

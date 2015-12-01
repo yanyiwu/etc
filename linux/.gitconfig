@@ -8,13 +8,3 @@
     pull = pull --ff-only
 [color]
 	ui = true
-[push]
-	default = simple
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
-[diff]
-	tool = vimdiff
-[difftool]
-	prompt = No

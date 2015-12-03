@@ -143,3 +143,10 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 
 function ports() { lsof -Pni4 | grep LISTEN }
+
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+    --cache=$HOME/.npm/.cache/cnpm \
+    --disturl=https://npm.taobao.org/dist \
+    --userconfig=$HOME/.cnpmrc"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"

@@ -132,3 +132,6 @@ export EDITOR='vim'
 
 alias cleantrash="rrm ~/.trash/*"
 export LD_LIBRARY_PATH=/usr/local/lib
+
+eval "$(fasd --init auto)"
+alias j='fasd_cd -d'

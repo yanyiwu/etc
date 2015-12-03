@@ -8,3 +8,5 @@
     pull = pull --ff-only
 [color]
 	ui = true
+[push]
+	default = simple

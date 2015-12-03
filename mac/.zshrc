@@ -150,3 +150,6 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
     --userconfig=$HOME/.cnpmrc"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+eval "$(fasd --init auto)"
+alias j='fasd_cd -d'

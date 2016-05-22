@@ -82,6 +82,7 @@ Bundle 'vim-scripts/a.vim'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'rust-lang/rust.vim'
+Bundle 'davidhalter/jedi-vim'
 
 call vundle#end()
 

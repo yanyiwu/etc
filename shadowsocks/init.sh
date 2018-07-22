@@ -1,4 +1,7 @@
 #!/usr/bin/bash
+
+## from https://blog.csdn.net/bleachswh/article/details/73896348
+
 set -e
 set -x
 apt-get update                              

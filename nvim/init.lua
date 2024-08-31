@@ -7,6 +7,11 @@ vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
 vim.cmd("set clipboard=unnamedplus")
 
+vim.cmd("command Q : q")
+vim.cmd("command W : w")
+vim.cmd("command Wq : wq")
+vim.cmd("command WQ : wq")
+
 -- 自动定位到上次关闭文件时的光标位置
 vim.api.nvim_create_autocmd("BufReadPost", {
   pattern = "*",

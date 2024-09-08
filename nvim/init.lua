@@ -12,7 +12,7 @@ vim.cmd("command W : w")
 vim.cmd("command Wq : wq")
 vim.cmd("command WQ : wq")
 
--- 自动定位到上次关闭文件时的光标位置
+-- Auto jump to the last cursor position
 vim.api.nvim_create_autocmd("BufReadPost", {
   pattern = "*",
   callback = function()
@@ -46,8 +46,8 @@ require('packer').startup(function()
 end)
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"python"}, -- 安装Python支持
+  ensure_installed = {"python"}, -- Install Python support
   highlight = {
-    enable = true,              -- 启用高亮
+    enable = true,            
   },
 }

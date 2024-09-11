@@ -5,8 +5,10 @@
 	st = status
 	ci = commit
     co = checkout
-    pull = pull --ff-only
+	pr = pull --rebase
 [color]
 	ui = true
 [push]
 	default = simple
+[submodule]
+	recurse = true
